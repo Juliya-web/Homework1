@@ -1,55 +1,57 @@
-let a = "10";
-alert(a);
+let password = 'пароль';
 
-let iphone = "Год выпуска первого IPhone - 2007";
-alert(iphone);
+let exit = prompt('Введите пароль');
+if (exit === password) {
+    alert('Пароль введен верно');
+} else {
+    alert('Пароль введен не верно');
 
-let creator = "Создатель языка Java Script - Брендан Эйх";
-alert(creator);
+}
 
-let number10 = 10;
-let number2 = 2;
-let result = number10 + number2;
-alert(result);
-let result1 = number10 - number2;
-alert(result1);
-let result2 = number10 * number2;
-alert(result2);
-let result3 = number10 / number2;
-alert(result3);
+let c = 1;
+if (c > 0 && c < 10) {
+    console.log('Верно');
+} else {
+    console.log('Неверно');
+}
 
-let aa = 2;
-let result4 = aa ** 5;
-alert(result4);
+let d = 150;
+let e = 7;
+if (d > 100 || e > 100) {
+    console.log('Верно');
+} else {
+    console.log('Неверно');
+}
 
-let a1 = 9;
-let b1 = 2;
-alert(a1 % b1);
+let a = '2';
+let b = '3';
+alert(Number(a) + Number(b));
 
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num += 1;
-num -= 1;
-alert(num);
 
-let age = prompt("Сколько вам лет?");
-alert(age);
+let mounthNumber = String(prompt('Введите номер месяца'));
 
-let user = {
-    name: "Juliya",
-    age:34,
-    isAdmin:true,
-};
-user ['cityofresidence'] = "Ufa";
-user ['age'] = 30;
-delete user['cityofresidence'];
-
-let info = prompt("Какую информацию хотите узнать о пользователе");
-alert(user[info]);
-
-let name = prompt("как вас зовут?");
-alert(`Привет, ${name}!`);
-
+switch (mounthNumber) {
+    case '12':
+    case '1':
+    case '2':
+        console.log('зима')
+        break;
+    case '3':
+    case '4':
+    case '5':
+        console.log('весна')
+        break;
+    case '6':
+    case '7':
+    case '8':
+        console.log('лето')
+        break;
+    case '9':
+    case '10':
+    case '11':
+        console.log('осень')
+        break;
+    default:
+        console.log('Такой месяц еще не придумали')
+        break;
+}
