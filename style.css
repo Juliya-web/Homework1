@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.top {
+  background-image: url(img/fon.png);
+  width: 1440px;
+  height: 1024px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.top__head {
+  display: flex;
+  flex-direction: column;
+  padding-top: 217px;
+  flex-wrap: wrap;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.top__link {
+  color: #FFF;
+  font-size: 64px;
+  font-weight: 700;
+  max-width: 788px;
+  padding-bottom: 32px;
+}
+
+.top__top {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  width: 481px;
+  padding-bottom: 44px;
+}
+
+.top__button {
+  border-radius: 30px;
+  background: #9C0332;
+  width: 234.063px;
+  height: 48.603px;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.top__button:hover {
+  background-color: #EB443F;
+}
+
+.go {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 32px;
+}
+
+.box {
+  background-image: url(img/fon2.png);
+  width: 1440px;
+  height: 556px;
+}
+
+.box__section {
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-top: 128px;
+}
+
+.box__item {
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%);
+  height: 300px;
+}
+
+.box__item:hover {
+  border-radius: 16px;
+  border: 3px solid #44D2FF;
+  background-color: linear-gradient 180deg, rgba(39, 1, 15, 0) 0%, #001944 100%;
+}
+
+.box__item span {
+  display: block;
+  position: relative;
+}
+
+.box__text {
+  text-align: left;
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  bottom: 64px;
+  left: 32px;
+}
+
+.game {
+  background-image: url(img/fonGame.png);
+  width: 1440px;
+  height: 800px;
+  padding-top: 282px;
+}
+.game__section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.game__box {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  grid-column: span 7;
+}
+.game__link {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+}
+.game__top {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  width: 584px;
+}
+.game__button {
+  border-radius: 30px;
+  background: #9C0332;
+  width: 234.063px;
+  height: 48.603px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+}
+.game__button:hover {
+  background-color: #EB443F;
+}
+.game__pic {
+  grid-column: span 5;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 165px);
+    padding-right: calc(50% - 165px);
+  }
+  .top {
+    width: 375px;
+    height: 735px;
+    background-position: 30%;
+  }
+  .top__head {
+    padding-top: 238px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .top__link {
+    font-size: 32px;
+  }
+  .top__top {
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 32px;
+    width: 343px;
+  }
+  .go {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .box {
+    width: 375px;
+    height: 1221px;
+  }
+  .box__section {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .game {
+    width: 375px;
+    height: 663px;
+  }
+  .game__section {
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 0;
+    padding-right: 0;
+    row-gap: 64px;
+  }
+  .game__link {
+    font-size: 32px;
+  }
+  .game__top {
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+  }
+  .game__box {
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .game__pic {
+    width: 345px;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */

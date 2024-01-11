@@ -1,0 +1,90 @@
+@media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 165px);
+    padding-right: calc(50% - 165px);
+  }
+
+  .top {
+    width: 375px;
+    height: 735px;
+    background-position: 30%;
+
+    &__head {
+      padding-top: 238px;
+      text-align: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: row;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__link {
+      font-size: 32px;
+    }
+
+    &__top {
+      font-size: 14px;
+      line-height: 22px;
+      padding-bottom: 32px;
+      width: 343px;
+    }
+  }
+
+  .go {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .box {
+    width: 375px;
+    height: 1221px;
+
+    &__section {
+      flex-direction: column;
+      row-gap: 32px;
+    }
+  }
+
+  .game {
+    width: 375px;
+    height: 663px;
+
+    &__section {
+      grid-template-columns: repeat(4, 1fr);
+      padding-left: 0;
+      padding-right: 0;
+      row-gap: 64px;
+    }
+
+    &__link {
+      font-size: 32px;
+      
+    }
+    &__top {
+      font-size: 14px;
+      line-height: 22px;
+      width: 343px;
+    }
+
+    &__box {
+      text-align: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    &__pic {
+      width: 345px;
+    }
+  }
+}
+
+
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
