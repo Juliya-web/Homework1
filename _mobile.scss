@@ -5,18 +5,14 @@
   }
 
   .top {
-    width: 375px;
     height: 735px;
     background-position: 30%;
 
     &__head {
       padding-top: 238px;
       text-align: center;
-      flex-wrap: wrap;
       justify-content: center;
       flex-direction: row;
-      padding-left: 0;
-      padding-right: 0;
     }
 
     &__link {
@@ -37,7 +33,6 @@
   }
 
   .box {
-    width: 375px;
     height: 1221px;
 
     &__section {
@@ -47,20 +42,18 @@
   }
 
   .game {
-    width: 375px;
     height: 663px;
+    padding-top: 51px;
 
     &__section {
       grid-template-columns: repeat(4, 1fr);
-      padding-left: 0;
-      padding-right: 0;
-      row-gap: 64px;
     }
 
     &__link {
       font-size: 32px;
-      
+
     }
+
     &__top {
       font-size: 14px;
       line-height: 22px;
@@ -72,13 +65,49 @@
       flex-wrap: wrap;
       justify-content: center;
       flex-direction: row;
+      padding-bottom: 64px;
     }
 
     &__pic {
       width: 345px;
     }
   }
+
+  .remember {
+    height: 653px;
+
+    &__section {
+      grid-template-columns: repeat(4, 1fr);
+      padding-top: 51px;
+    }
+
+    &__pic {
+      width: 344px;
+      order: 2;
+    }
+
+    &__box {
+      order: 1;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 64px;
+    }
+
+    &__link {
+      font-size: 32px;
+      width: 264px;
+    }
+
+    &__top {
+      font-size: 14px;
+      line-height: 22px;
+      width: 343px;
+    }
+  }
 }
+
+
 
 
 
