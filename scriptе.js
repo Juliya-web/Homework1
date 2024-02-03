@@ -36,7 +36,11 @@ function fruits() {
     let question = prompt('Чему равен последний элемент массива?');
     if (quetion === game2[0] && question === game2[game2.length - 1]) {
         alert('Поздравляю, вы угадали');
+<<<<<<< HEAD
     } else if (quetion === game2[0] || question === game2[game2.length - 1]) {
+=======
+    } else if (quetion !== game2[0] || question !== game2[game2.length - 1]) {
+>>>>>>> 4ffcbba3321d209d161a81b45ea135b2b11bc23d
         alert('Вы были близки к победе');
     } else {
         alert('Вы проиграли')
