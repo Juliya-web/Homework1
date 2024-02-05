@@ -325,21 +325,18 @@
 
 //2.7.1
 let str = 'Cтрока';
-<<<<<<< HEAD
 console.log(str.toUpperCase());
-=======
 console.log(new String(str).toUpperCase());
->>>>>>> 4ffcbba3321d209d161a81b45ea135b2b11bc23d
 
 //Задание 2.2.7
 //Создайте функцию, которая в качестве параметров принимает 
 //массив строк и строку. Возвращать данная функция должна новый массив, содержащий только те элементы переданного массива, которые начинаются с переданной строки. 
 //Регистр символов не должен влиять.
 //1ый вариант
-<<<<<<< HEAD
+
 function searchStart(arr, str) {
     return arr.filter(el => el.toLowerCase().startsWith(str.toLowerCase()));
-=======
+}
 //function searchStart(arr, str) {
     //return arr.filter(el => el.toLocaleLowerCase().startsWith(str));
 //}
@@ -363,12 +360,11 @@ function searchStart(arr, str) {
         }
     })
     return result;
->>>>>>> 4ffcbba3321d209d161a81b45ea135b2b11bc23d
 }
 console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
 console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); // ['груша']
 console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); // []
-<<<<<<< HEAD
+
 //2ой вариант
 //function str(arr, word) {
     //return arr.map(element => element.toLocaleLowerCase()).filter(element => element.startsWith(word));
@@ -391,8 +387,6 @@ console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр']
 //console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
 //console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); // ['груша']
 //console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); // []
-=======
->>>>>>> 4ffcbba3321d209d161a81b45ea135b2b11bc23d
 
 //Задание 3.2.7
 //Округлите число 32.58884:
@@ -424,11 +418,8 @@ console.log(min);
 //Создайте функцию, которая будет выводить в консоль рандомное число от 1 до 10.
 
 function getRandomInt(minValue, maxValue) {
-<<<<<<< HEAD
     return Math.floor(Math.random() * (maxValue - minValue)) + minValue;
-=======
     return Math.round(Math.random() * (maxValue - minValue)) + minValue;
->>>>>>> 4ffcbba3321d209d161a81b45ea135b2b11bc23d
 }
 console.log(getRandomInt(1, 10));
 
@@ -455,11 +446,8 @@ console.log(getRandomArrNumbers(15));
 //а в качестве результата возвращает случайное целое число в этом диапазоне.
 
 function randomNumb(min, max) {
-<<<<<<< HEAD
     return Math.floor(Math.random() * (max - min) + min);
-=======
-    return Math.round(Math.random() * (max - min) + min);
->>>>>>> 4ffcbba3321d209d161a81b45ea135b2b11bc23d
+
 }
 console.log(randomNumb(5, 15));
 

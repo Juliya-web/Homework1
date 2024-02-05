@@ -31,10 +31,9 @@ function fruits() {
     let game2 = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
     game2 = game2.sort(() => Math.random() - 0.5);
     alert(game2);
-
     let quetion = prompt('Чему равен первый элемент массива?');
     let question = prompt('Чему равен последний элемент массива?');
-    if (quetion === game2[0] && question === game2[game2.length - 1]) {
+    if (quetion.toLowerCase === game2[0].toLowerCase && question.toLowerCase === game2[game2.length - 1].toLowerCase) {
         alert('Поздравляю, вы угадали');
     } else if (quetion === game2[0] || question === game2[game2.length - 1]) {
         alert('Вы были близки к победе');
