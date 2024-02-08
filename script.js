@@ -324,9 +324,9 @@
 //console.log(got);
 
 //2.7.1
-let str = 'Cтрока';
-console.log(str.toUpperCase());
-console.log(new String(str).toUpperCase());
+// let str = 'Cтрока';
+// console.log(str.toUpperCase());
+// console.log(new String(str).toUpperCase());
 
 //Задание 2.2.7
 //Создайте функцию, которая в качестве параметров принимает 
@@ -334,9 +334,9 @@ console.log(new String(str).toUpperCase());
 //Регистр символов не должен влиять.
 //1ый вариант
 
-function searchStart(arr, str) {
-    return arr.filter(el => el.toLowerCase().startsWith(str.toLowerCase()));
-}
+// function searchStart(arr, str) {
+//     return arr.filter(el => el.toLowerCase().startsWith(str.toLowerCase()));
+// }
 //function searchStart(arr, str) {
     //return arr.filter(el => el.toLocaleLowerCase().startsWith(str));
 //}
@@ -352,18 +352,18 @@ function searchStart(arr, str) {
 //console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); // []
 
 //3ий вариант
-function searchStart(arr, str) {
-    let result = [];
-    arr.forEach((el) => {
-        if (el.toLocaleLowerCase().startsWith(str)) {
-            result.push(el);
-        }
-    })
-    return result;
-}
-console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
-console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); // ['груша']
-console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); // []
+// function searchStart(arr, str) {
+//     let result = [];
+//     arr.forEach((el) => {
+//         if (el.toLocaleLowerCase().startsWith(str)) {
+//             result.push(el);
+//         }
+//     })
+//     return result;
+// }
+// console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
+// console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); // ['груша']
+// console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); // []
 
 //2ой вариант
 //function str(arr, word) {
@@ -393,79 +393,79 @@ console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр']
 //1.До меньшего целого
 //2.До большего целого
 //3.До ближайшего целого
-let getRound = 32.58884
-let resultmax = Math.round(getRound)
-console.log(resultmax); //до большего целого
+// let getRound = 32.58884
+// let resultmax = Math.round(getRound)
+// console.log(resultmax); //до большего целого
 
-let getFloor = 32.58884;
-let result = Math.floor(getFloor);
-console.log(result);//до ближайшего целого
+// let getFloor = 32.58884;
+// let result = Math.floor(getFloor);
+// console.log(result);//до ближайшего целого
 
-let getCeil = 32.58884;
-let result1 = Math.ceil(getCeil);
-console.log(result1);
+// let getCeil = 32.58884;
+// let result1 = Math.ceil(getCeil);
+// console.log(result1);
 
 //Задание 4.2.7
 //Даны числа 52, 53, 49, 77, 21, 32. 
 //Необходимо найти среди этих чисел наименьшее и наибольшее числа и вывести их в консоль.
-let array = [52, 53, 49, 77, 21, 32];
-let max = Math.max(...array);
-let min = Math.min(...array);
-console.log(max);
-console.log(min);
+// let array = [52, 53, 49, 77, 21, 32];
+// let max = Math.max(...array);
+// let min = Math.min(...array);
+// console.log(max);
+// console.log(min);
 
 //Задание 5.2.7
 //Создайте функцию, которая будет выводить в консоль рандомное число от 1 до 10.
 
-function getRandomInt(minValue, maxValue) {
-    return Math.floor(Math.random() * (maxValue - minValue)) + minValue;
-    return Math.round(Math.random() * (maxValue - minValue)) + minValue;
-}
-console.log(getRandomInt(1, 10));
+// function getRandomInt(minValue, maxValue) {
+//     return Math.floor(Math.random() * (maxValue - minValue)) + minValue;
+//     return Math.round(Math.random() * (maxValue - minValue)) + minValue;
+// }
+// console.log(getRandomInt(1, 10));
 
 //Задание 6.2.7
 //Напишите функцию, которая будет принимать на вход целое число, а возвращать массив случайных целых чисел от 0 до переданного числа. 
 //Длина массива должна быть в 2 раза меньше переданного числа.
-function getRandomArrNumbers(arr) {
-    let newArr = []//пустой массив
-    let el = Math.floor(arr / 2);//длину массива уменьшила в два раза и округлила до меньшего числа
+// function getRandomArrNumbers(arr) {
+//     let newArr = []//пустой массив
+//     let el = Math.floor(arr / 2);//длину массива уменьшила в два раза и округлила до меньшего числа
 
-    for (let i = 0; i < el; i++) {
-        newArr[i] = Math.floor(Math.random() * arr);
-    }
-    return newArr
-}
+//     for (let i = 0; i < el; i++) {
+//         newArr[i] = Math.floor(Math.random() * arr);
+//     }
+//     return newArr
+// }
 
-console.log(getRandomArrNumbers(7));
-console.log(getRandomArrNumbers(12));
-console.log(getRandomArrNumbers(15));
+// console.log(getRandomArrNumbers(7));
+// console.log(getRandomArrNumbers(12));
+// console.log(getRandomArrNumbers(15));
 
 
 //Задание 7.2.7
 //Напишите функцию, которая на вход принимает 2 целых числа,
 //а в качестве результата возвращает случайное целое число в этом диапазоне.
 
-function randomNumb(min, max) {
-    return Math.floor(Math.random() * (max - min) + min);
+// function randomNumb(min, max) {
+//     return Math.floor(Math.random() * (max - min) + min);
 
-}
-console.log(randomNumb(5, 15));
+// }
+// console.log(randomNumb(5, 15));
 
 //Задание 8.2.7
 //Выведите в консоль текущую дату в стандартном режиме. 
 //Используйте один из трех рассмотренных в уроке способов.
 
-let currentDate = new Date();
-console.log(currentDate);
+// let currentDate = new Date();
+// console.log(currentDate);
 
 
 //Задание 9.2.7
 //Создайте переменную currentDate и сохраните в нее текущую дату. 
 //Выведите дату, которая наступит через 73 дня после текущей.
-let currentDatee = new Date();
+// let currentDatee = new Date();
 //console.log(currentDatee);//Tue Jan 30 2024 22:05:39 GMT+0500 (Екатеринбург, стандартное время)
-currentDatee.setDate(currentDatee.getDate() + 73);
-console.log(currentDatee);
+// currentDatee.setDate(currentDatee.getDate() + 73);
+// console.log(currentDatee);
 
 //Задание 10.2.7
 //Написать функцию, которая на вход принимает дату, а возвращает ее отображение в виде:
@@ -473,16 +473,145 @@ console.log(currentDatee);
 //Время: <часы>:<минуты>:<секунды>
 //Время, которое будет выведено, также хранится в объекте Date.
 
-const days = ["Воскресение", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-//массив где хранится названия дней недели
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-//массив где хранится названия месяцев на русском
-let myDate = new Date();
+// const days = ["Воскресение", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+// //массив где хранится названия дней недели
+// const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+// //массив где хранится названия месяцев на русском
+// let myDate = new Date();
 
-let seconds = myDate.getSeconds().toString().padStart(2, '0');
-let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()];
-let fullTime = "Время: " + myDate.getHours() + " : " + myDate.getMinutes() + " : " + myDate.getSeconds();
+// let seconds = myDate.getSeconds().toString().padStart(2, '0');
+// let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()];
+// let fullTime = "Время: " + myDate.getHours() + " : " + myDate.getMinutes() + " : " + myDate.getSeconds();
 
-console.log(fullDate);
-console.log(fullTime);
+// console.log(fullDate);
+// console.log(fullTime);
 
+// Задание 1
+// С помощью метода массива sort отсортируйте массив people по возрастанию возраста и выведите их в консоль.
+// Пример сортировки по свойству в массиве объектов вы можете найти в документации: https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/sort.
+
+ const people = [
+    { name: 'Глеб', age: 29 },
+    { name: 'Анна', age: 17 },
+    { name: 'Олег', age: 7 },
+    { name: 'Оксана', age: 47 }
+ ];
+ people.sort(function (a, b) {
+   if (a.age > b.age) {
+     return 1;
+   }
+   if (a.age < b.age) {
+     return -1;
+   }
+   // a должно быть равным b
+   return 0;
+ });
+ // Допишите колбэк для sort, изучите, как работает колбэк, в документации
+ console.log(people);
+// // код выше должен вывеcти =>
+// // [
+// //  { name: 'Олег', age: 7 },
+// //  { name: 'Анна', age: 17 },
+// //  { name: 'Глеб', age: 29 },
+// //  { name: 'Оксана', age: 47 }
+// // ]
+
+
+
+// Задание 2.2.8
+// Реализуйте функцию filter
+// которая должна работать аналогично методу массива `filter. За основу возьмите функцию 
+// map, которую мы реализовывали на уроке.
+// Чтобы из функции map сделать filter, нужно, в зависимости от результата вызова 
+// ruleFunction, принимать решение о том, добавлять в результирующий массив
+// очередной элемент или нет.
+// Возьмите за основу код ниже. Задание считается выполненным, если два 
+// console.log в коде выводят правильное значение:
+
+function isPositive(number0) {
+    return number0 > 0;
+    }
+    
+    function isMale(item) {
+     return item.gender === 'male';
+      } 
+      
+    function filter(arr, ruleFunction) {
+      const output = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (ruleFunction(arr[i])) {
+        output.push(arr[i]);
+    }
+    }
+    return output;
+    }
+    
+    console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+    
+    const people1 = [
+       {name: 'Глеб', gender: 'male'},
+       {name: 'Анна', gender: 'female'},
+       {name: 'Олег', gender: 'male'},
+       {name: 'Оксана', gender: 'female'}
+    ];
+    
+    console.log(filter(people1, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+    
+    // Задание 3
+    // Напишите программу, которая на протяжении 30 секунд каждые 3 секунды будет выводить
+    // в консоль текущую дату. 
+    // Последней строкой должно выводиться сообщение «30 секунд прошло».
+    
+     const timer = () => {
+       let currentDate = new Date();
+       const timerId = setInterval(() => {
+         console.log(new Date);
+       }, 3000);
+      
+       setTimeout(() => {
+         clearInterval(timerId);
+         console.log('30 секунд прошло')
+       }, 30000);
+     }
+    
+     timer(new Date());
+    
+    //4.2.8
+    // Сейчас код ниже выводит в консоль «Привет, Глеб!» сразу после запуска.
+    // Допишите функцию delayForSecond
+    // так, чтобы приветствие выводилось в консоль не сразу, а спустя 1 секунду. 
+    //Используйте setTimeout.
+    
+     function delayForSecond1(callback) {
+    //  	 Код писать можно только внутри этой функции
+         setTimeout(() => {
+            callback();
+         }, 1000);
+      }
+      delayForSecond1(function () {
+         console.log('Привет, Глеб!');
+    })
+    
+    //5.2.8
+    // Посмотрите код. В нём допущена ошибка, и он выводит сообщения не в том порядке:
+    // Привет, Глеб!
+    // Прошла одна секунда
+    // Правильный порядок:
+    // Прошла одна секунда
+    // Привет, Глеб!
+    // Исправьте код, чтобы он выводил сообщения в правильном порядке:
+    // Функция delayForSecond через 1 секунду пишет в консоль «Прошла одна секунда», 
+    // а затем вызывает переданный колбэк
+    function delayForSecond(cb) {
+        setTimeout(() => {
+            console.log('Прошла одна секунда');
+                    if(cb) {cb();}
+        }, 1000)
+    }
+    // Функция sayHi выводит в консоль приветствие для указанного имени
+    function sayHi (name) {
+        console.log(`Привет, ${name}!`);
+    }
+    // Код выше менять нельзя
+    // Нужно изменить код ниже:
+    delayForSecond(() => (sayHi('Глеб')));
